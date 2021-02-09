@@ -1,0 +1,20 @@
+.block{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+}
+
+.block>div{
+    width:30%;
+}
+
+.block>div>a>img{
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.activeLink>img{
+    border: 1px solid #000;
+}
