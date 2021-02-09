@@ -1,32 +1,30 @@
 import './app.module.css';
-import About from './components/About/About';
-import Contacts from './components/Contacts/Contacts';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import Marketing from './components/Marketing/Marketing';
-import Work from './components/Work/Work';
-import Form from './components/Form/Form';
-import SidebarSocials from './components/SidebarSocials/SidebarSocials';
-import Sidbar from './components/Sidebar/Sidebar';
-import Parallax from "./components/Parallax/Parallax";
+import About from './componentsRu/About/About';
+import Contacts from './componentsRu/Contacts/Contacts';
+import Footer from './componentsRu/Footer/Footer';
+import Header from './componentsRu/Header/Header';
+import Main from './componentsRu/Main/Main';
+import Marketing from './componentsRu/Marketing/Marketing';
+import Work from './componentsRu/Work/Work';
+import Form from './componentsRu/Form/Form';
+import SidebarSocials from './componentsRu/SidebarSocials/SidebarSocials';
+import Sidbar from './componentsRu/Sidebar/Sidebar';
+import ComponentsRu from "./componentsRu/ComponentsRu";
+import {BrowserRouter, Route} from "react-router-dom";
+import Eng_Ru from "./Eng_Ru/Eng_Ru";
+import ComponentsEng from "./componentsEng/ComponentsEng";
 
 const App = ({}) => {
-  return (
-    <div>
-      <Header/>
-      <Sidbar/>
-      <Main/>
-      <Parallax/>
-      <About/>
-      <Marketing/>
-      <Contacts/>
-      <Work/>
-      <Form/>
-      <Footer/>
-      <SidebarSocials/>
-    </div>
-  );
+    return (
+      <>
+          <BrowserRouter>
+              <div>
+                  <Route exact path='/' component={ComponentsRu}/>
+                  <Route path='/eng' component={ComponentsEng}/>
+              </div>
+          </BrowserRouter>
+      </>
+    );
 }
 
 export default App;
