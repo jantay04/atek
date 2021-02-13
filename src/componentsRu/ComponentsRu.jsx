@@ -8,6 +8,7 @@ import Work from './Work/Work';
 import Form from './Form/Form';
 import SidebarSocials from './SidebarSocials/SidebarSocials';
 import Sidbar from './Sidebar/Sidebar';
+import Parthner from "./Partner/Parthner";
 
 const ComponentsRu = ({}) => {
   return (
@@ -16,6 +17,7 @@ const ComponentsRu = ({}) => {
       <Sidbar/>
       <Main/>
       <About/>
+      <Parthner/>
       <Marketing/>
       <Contacts/>
       <Work/>

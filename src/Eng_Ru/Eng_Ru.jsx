@@ -1,9 +1,17 @@
+import React, {useEffect} from 'react'
 import style from './Eng_Ru.module.css';
 import ru from './assets/ru.svg'
 import us from './assets/us.svg'
-import {NavLink} from "react-router-dom";
+import {NavLink, useHistory} from "react-router-dom";
 
 const EngRu = () => {
+    // const history = useHistory()
+    // let defLang = navigator.language;
+    // useEffect(() => {
+    //     defLang === "ru" ?
+    //         history.push("/ru") :
+    //         history.push("/eng")
+    // }, []);
     return (
       <>
           <div className={style.block}>

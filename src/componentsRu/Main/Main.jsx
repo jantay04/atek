@@ -2,7 +2,7 @@ import React from 'react';
 import style from './main.module.css';
 import arrow_right from './assets/arrow-right.svg';
 import Parallax from "./Parallax/Parallax";
-import BgVideo from "./BgVideo/BgVideo";
+import BgVideo from "./Bg/BgVideo";
 
 const Main = (props) => {
 
@@ -14,8 +14,9 @@ const Main = (props) => {
             <h1 className={style.main_caption}>Простые решения <br/> сложных <span
               className={style.main_caption_span}>проблем</span></h1>
             <div className={style.main_text}>
-              <p>Сделайте следующий шаг в развитии своего бизнеса с помощью цифровых технологий <br/>
-                Свяжитесь с одним из наших опытных цифровых стратегов, чтобы узнать, как мы можем помочь вам в достижении ваших бизнес-целей.</p>
+              <p>Наша команда состоит из высококлассных специалистов с международным опытом работы в сфере Web-разработки, мобильной разработки, Product менеджмента и дизайна. Мы предоставляем премиум сервис по доступным ценам и всегда нацелены на успех </p>
+              {/*<p>Сделайте следующий шаг в развитии своего бизнеса с помощью цифровых технологий <br/>*/}
+              {/*  Свяжитесь с одним из наших опытных цифровых стратегов, чтобы узнать, как мы можем помочь вам в достижении ваших бизнес-целей.</p>*/}
             </div>
             <a className={style.btn_get_free} href="#block-form">
               Получить бесплатную консультацию
@@ -26,7 +27,7 @@ const Main = (props) => {
           </div>
         </div>
         {/*<img src={main_bg} className={style.main_img}/>*/}
-        <Parallax/>
+        {/*<Parallax/>*/}
         <BgVideo/>
       </div>
     </div>

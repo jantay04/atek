@@ -23,7 +23,7 @@ const Parallax = (props) => {
               "shape": {
                 "type": "circle",
                 "stroke": {
-                  "width": 0,
+                  "width": 3,
                   "color": "#808080"
                 },
                 "polygon": {
@@ -58,7 +58,7 @@ const Parallax = (props) => {
               "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#808080",
+                "color": "#000f30",
                 "opacity": 0.4,
                 "width": 1
               },
@@ -92,7 +92,7 @@ const Parallax = (props) => {
               },
               "modes": {
                 "grab": {
-                  "distance": 250,
+                  "distance": 150,
                   "line_linked": {
                     "opacity": 1
                   }
